@@ -1,0 +1,143 @@
+{
+  "hull": {
+    "data_checks": [
+      "Hulls [3, 4] have different forms but identical resistance curves (likely a copying error in the source table)."
+    ],
+    "interval": {
+      "raw_coverage": 0.4383116883116883,
+      "calibrated_coverage": 0.7954545454545454,
+      "scale_factor": 2.749029100716101
+    },
+    "median_error": {
+      "Speed only (baseline)": 0.082,
+      "Delft-style regression": 0.0682,
+      "Boosted trees": 0.0562,
+      "Boosted trees + monotonic speed": 0.062
+    },
+    "median_error_fn_0.3_plus": {
+      "Speed only (baseline)": 0.0718,
+      "Delft-style regression": 0.0489,
+      "Boosted trees": 0.0412,
+      "Boosted trees + monotonic speed": 0.039
+    },
+    "hulls_with_dips": {
+      "Speed only (baseline)": 0,
+      "Delft-style regression": 0,
+      "Boosted trees": 0,
+      "Boosted trees + monotonic speed": 0
+    },
+    "optimum_radius_1": {
+      "caution": 1.0,
+      "radius": 1.0,
+      "fn": 0.35,
+      "design": {
+        "lcb": -5.0,
+        "cp": 0.53,
+        "l_disp": 4.78,
+        "b_t": 3.527,
+        "l_b": 3.377
+      },
+      "predicted_rr": 6.952996093030619,
+      "range_80": [
+        5.8311902458973375,
+        8.29061523137796
+      ],
+      "spread_log": 0.13729051253477764,
+      "parent_rr": 7.16,
+      "best_tested_rr": 7.11,
+      "best_tested_hull": 1,
+      "nearest_tested_hull": 19,
+      "distance_sd": 0.9999999922694129
+    }
+  },
+  "sail": {
+    "sections": 300,
+    "points": 14700,
+    "converged_share": 0.96,
+    "usable_points": 13083,
+    "panel_160_max_change_pct": {
+      "cl": 0.4550725374625816,
+      "cd": 0.6307218435056158
+    },
+    "theory": {
+      "median_slope_ratio": 0.8913650303893035,
+      "median_alpha_l0_gap_deg": 0.15656074384867236
+    },
+    "test": {
+      "cl_mae": 0.006925048491413191,
+      "cd_median_pct": 0.9840553047551868
+    },
+    "learning_curve_all": {
+      "cl_mae": {
+        "Hybrid (theory + network)": 0.0066,
+        "Network only": 0.0126
+      },
+      "cd_median_pct": {
+        "Hybrid (theory + network)": 0.9742,
+        "Network only": 1.1415
+      }
+    },
+    "learning_curve_smallest": {
+      "cl_mae": {
+        "Hybrid (theory + network)": 0.0376,
+        "Network only": 0.0436
+      },
+      "cd_median_pct": {
+        "Hybrid (theory + network)": 5.599,
+        "Network only": 5.8319
+      }
+    },
+    "optimum": [
+      {
+        "awa": 30,
+        "m": 0.06,
+        "p": 0.2,
+        "t": 0.1858,
+        "alpha": 16.0,
+        "cx_predicted": 0.9581,
+        "cx_xfoil": 0.9492,
+        "cx_baseline": 0.7851
+      },
+      {
+        "awa": 45,
+        "m": 0.06,
+        "p": 0.2,
+        "t": 0.1805,
+        "alpha": 15.75,
+        "cx_predicted": 1.3661,
+        "cx_xfoil": 1.3551,
+        "cx_baseline": 1.1234
+      },
+      {
+        "awa": 60,
+        "m": 0.06,
+        "p": 0.2,
+        "t": 0.1911,
+        "alpha": 16.25,
+        "cx_predicted": 1.6837,
+        "cx_xfoil": 1.664,
+        "cx_baseline": 1.3852
+      },
+      {
+        "awa": 90,
+        "m": 0.06,
+        "p": 0.2,
+        "t": 0.1965,
+        "alpha": 16.5,
+        "cx_predicted": 1.9588,
+        "cx_xfoil": 1.9298,
+        "cx_baseline": 1.6141
+      },
+      {
+        "awa": 120,
+        "m": 0.06,
+        "p": 0.6,
+        "t": 0.12,
+        "alpha": 18.0,
+        "cx_predicted": 1.7064,
+        "cx_xfoil": 1.6853,
+        "cx_baseline": 1.4105
+      }
+    ]
+  }
+}
